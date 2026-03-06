@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Sky Book Store</title>
 
 <style>
@@ -10,49 +13,64 @@
 body{
 margin:0;
 font-family:Arial, sans-serif;
-background:#0f172a;
-color:white;
+background:#f4f7ff;
+color:#222;
 overflow-x:hidden;
 }
 
-/* HEADER */
+/* TOP BAR */
 
-header{
+.topbar{
+background:#2563eb;
+color:white;
+text-align:center;
+padding:10px;
+font-size:14px;
+font-weight:bold;
+}
+
+/* HERO */
+
+.hero{
 height:90vh;
 display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:center;
 text-align:center;
-background-image:url("https://images.unsplash.com/photo-1508098682722-e99c43a406b2");
+
+background-image:url("https://images.unsplash.com/photo-1540747913346-19e32dc3e97e");
 background-size:cover;
 background-position:center;
+
 position:relative;
 }
 
-header::before{
+.hero::before{
 content:"";
 position:absolute;
 top:0;
 left:0;
 width:100%;
 height:100%;
-background:rgba(0,0,0,0.65);
+background:rgba(255,255,255,0.8);
 }
 
-header h1{
-font-size:60px;
+.hero h1{
+font-size:65px;
+color:#1e293b;
 z-index:2;
 }
 
-header p{
+.hero p{
 font-size:22px;
+color:#444;
 z-index:2;
-color:#e5e7eb;
 }
 
 .btn{
-background:#22c55e;
+background:#2563eb;
+color:white;
 padding:15px 35px;
 border:none;
 border-radius:6px;
@@ -61,18 +79,17 @@ cursor:pointer;
 margin-top:25px;
 z-index:2;
 transition:0.3s;
-box-shadow:0 0 20px rgba(34,197,94,0.8);
 }
 
 .btn:hover{
-transform:scale(1.1);
-background:#16a34a;
+transform:scale(1.05);
+background:#1e40af;
 }
 
-/* SECTIONS */
+/* BOOKS */
 
 section{
-padding:80px 20px;
+padding:70px 20px;
 text-align:center;
 }
 
@@ -85,16 +102,16 @@ margin-top:40px;
 }
 
 .book{
-background:#1e293b;
-padding:20px;
+background:white;
 width:240px;
-border-radius:12px;
-transition:0.4s;
+padding:20px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+transition:0.3s;
 }
 
 .book:hover{
 transform:translateY(-10px);
-box-shadow:0 10px 30px rgba(0,0,0,0.6);
 }
 
 .book img{
@@ -103,43 +120,43 @@ border-radius:8px;
 }
 
 .rating{
-color:gold;
-margin:6px 0;
+color:#f59e0b;
+margin:5px 0;
 }
 
-/* INFO SECTION */
+/* SERVICES */
 
-.info{
-background:#1f2937;
+.services{
+background:#eef2ff;
 }
 
-.info-box{
-max-width:700px;
+.service-box{
+max-width:800px;
 margin:auto;
-background:#020617;
+background:white;
 padding:30px;
 border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
 }
 
-/* HELPLINE */
+/* CRICKET FACT */
 
-.helpline{
-background:#020617;
-}
-
-.helpline-number{
-font-size:28px;
-color:#22c55e;
-margin-top:10px;
+.fact{
+max-width:700px;
+margin:auto;
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
 }
 
 /* FOOTER */
 
 footer{
-background:#020617;
+background:#1e293b;
+color:white;
 padding:30px;
 text-align:center;
-color:#9ca3af;
 }
 
 /* ANIMATED BALL */
@@ -147,26 +164,58 @@ color:#9ca3af;
 .ball{
 position:fixed;
 top:80%;
-left:-50px;
-font-size:45px;
+left:-40px;
+font-size:40px;
 animation:ballmove 10s linear infinite;
-z-index:999;
 }
 
 @keyframes ballmove{
 
 0%{
-left:-50px;
+left:-40px;
 transform:rotate(0deg);
 }
 
 50%{
-top:25%;
+top:30%;
 }
 
 100%{
 left:110%;
 transform:rotate(720deg);
+}
+
+}
+
+/* FLOODLIGHT EFFECT */
+
+.floodlights{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+pointer-events:none;
+
+background:linear-gradient(
+120deg,
+rgba(255,255,255,0) 40%,
+rgba(255,255,255,0.25) 50%,
+rgba(255,255,255,0) 60%
+);
+
+background-size:200% 200%;
+animation:lightsMove 6s linear infinite;
+}
+
+@keyframes lightsMove{
+
+0%{
+background-position:-200% 0;
+}
+
+100%{
+background-position:200% 0;
 }
 
 }
@@ -177,19 +226,22 @@ transform:rotate(720deg);
 
 <body>
 
-<div class="ball">🏏</div>
+<div class="topbar">
+⭐ Best Services | ⚡ Easy to Use | 🕐 24×7 Customer Support
+</div>
 
-<header>
+<div class="ball">🏏</div>
+<div class="floodlights"></div>
+
+<div class="hero">
 
 <h1>Sky Book Store</h1>
 
 <p>Your Dream Online Book Store for Cricket Lovers</p>
 
-<a href="https://wa.me/919350213350">
-<button class="btn">Order Books on WhatsApp</button>
-</a>
+<button class="btn">Explore Books</button>
 
-</header>
+</div>
 
 
 <section>
@@ -199,63 +251,79 @@ transform:rotate(720deg);
 <div class="books">
 
 <div class="book">
+
 <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794">
+
 <h3>Cricket Analytics</h3>
+
 <div class="rating">⭐⭐⭐⭐⭐</div>
-<p>Understand cricket statistics and match patterns.</p>
-<button class="btn">Buy Now</button>
+
+<p>Understand cricket statistics and match analysis.</p>
+
 </div>
 
 <div class="book">
+
 <img src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d">
+
 <h3>Fantasy Cricket Guide</h3>
+
 <div class="rating">⭐⭐⭐⭐</div>
-<p>Learn how to build strong fantasy teams.</p>
-<button class="btn">Buy Now</button>
+
+<p>Learn how to build winning fantasy teams.</p>
+
 </div>
 
 <div class="book">
+
 <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f">
+
 <h3>Cricket Strategy</h3>
+
 <div class="rating">⭐⭐⭐⭐⭐</div>
+
 <p>Learn captaincy tactics and field placements.</p>
-<button class="btn">Buy Now</button>
-</div>
 
 </div>
-
-</section>
-
-
-<section class="info">
-
-<h2>Easy to Use</h2>
-
-<div class="info-box">
-
-<p>Sky Book Store is designed for cricket fans who want simple and easy access to the best cricket books.</p>
-
-<p>✔ Easy ordering through WhatsApp</p>
-<p>✔ Fast response from our team</p>
-<p>✔ Cricket knowledge and insights</p>
-<p>✔ Trusted by cricket lovers</p>
 
 </div>
 
 </section>
 
 
-<section class="helpline">
+<section class="services">
 
-<h2>24/7 Customer Helpline</h2>
+<h2>Why Choose Sky Book Store</h2>
 
-<p>Our support team is available anytime to help you.</p>
+<div class="service-box">
 
-<div class="helpline-number">
-📞 +91 9350213350
+<p>✔ Easy to explore and discover cricket books</p>
+
+<p>✔ Designed for cricket lovers and readers</p>
+
+<p>✔ Simple and user-friendly interface</p>
+
+<p>✔ Reliable platform for cricket knowledge</p>
+
 </div>
 
-<p>You can also contact us on WhatsApp for quick assistance.</p>
+</section>
+
+
+<section>
+
+<h2>Cricket Knowledge Corner</h2>
+
+<div class="fact">
+
+<p>🏏 Did you know?</p>
+
+<p>
+The longest cricket match ever played lasted 12 days between England and South Africa in 1939.
+Cricket is a game of strategy, patience and deep analysis.
+</p>
+
+</div>
 
 </section>
 
