@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Sky Book Store <p style="color:#16a34a;font-weight:bold;font-size:18px;">
-🕐 24/7 Customer Support & Helpline Available
-</p></title>
+<title>Sky Book Store</title>
 
 <style>
 
@@ -31,7 +28,7 @@ font-size:15px;
 font-weight:bold;
 }
 
-/* HERO */
+/* HERO SECTION */
 
 .hero{
 height:90vh;
@@ -59,11 +56,11 @@ background:rgba(255,255,255,0.85);
 }
 
 .hero h1{
-font-size:72px;
+font-size:75px;
 font-weight:bold;
 color:#2563eb;
 z-index:2;
-text-shadow:0 3px 10px rgba(0,0,0,0.2);
+text-shadow:0 3px 12px rgba(0,0,0,0.2);
 }
 
 .hero p{
@@ -72,28 +69,29 @@ color:#444;
 z-index:2;
 }
 
-/* BUTTON */
+/* WHATSAPP BUTTON */
 
-.btn{
-background:#22c55e;
+.whatsapp-btn{
+background:#25D366;
 color:white;
-padding:16px 40px;
+padding:18px 40px;
 border:none;
-border-radius:8px;
-font-size:18px;
+border-radius:10px;
+font-size:20px;
+font-weight:bold;
 cursor:pointer;
 margin-top:25px;
 z-index:2;
+box-shadow:0 8px 20px rgba(0,0,0,0.2);
 transition:0.3s;
-box-shadow:0 6px 20px rgba(0,0,0,0.2);
 }
 
-.btn:hover{
+.whatsapp-btn:hover{
+background:#1ebe5d;
 transform:scale(1.08);
-background:#16a34a;
 }
 
-/* BOOK SECTION */
+/* BOOKS */
 
 section{
 padding:80px 20px;
@@ -118,7 +116,7 @@ transition:0.3s;
 }
 
 .book:hover{
-transform:translateY(-12px);
+transform:translateY(-10px);
 }
 
 .book img{
@@ -139,17 +137,6 @@ background:#e0e7ff;
 
 .service-box{
 max-width:800px;
-margin:auto;
-background:white;
-padding:35px;
-border-radius:12px;
-box-shadow:0 6px 20px rgba(0,0,0,0.1);
-}
-
-/* CRICKET FACT */
-
-.fact{
-max-width:700px;
 margin:auto;
 background:white;
 padding:35px;
@@ -194,7 +181,7 @@ transform:rotate(720deg);
 
 }
 
-/* FLOODLIGHT EFFECT */
+/* FLOODLIGHTS */
 
 .floodlights{
 position:fixed;
@@ -227,24 +214,22 @@ background-position:200% 0;
 
 }
 
-</.whatsapp-btn{
+/* FLOATING WHATSAPP */
+
+.float-whatsapp{
+position:fixed;
+bottom:25px;
+right:25px;
 background:#25D366;
 color:white;
-padding:18px 40px;
-border:none;
-border-radius:10px;
-font-size:20px;
-font-weight:bold;
-cursor:pointer;
-margin-top:25px;
-box-shadow:0 8px 20px rgba(0,0,0,0.2);
-transition:0.3s;
+font-size:28px;
+padding:15px 18px;
+border-radius:50%;
+box-shadow:0 6px 20px rgba(0,0,0,0.3);
+text-decoration:none;
 }
 
-.whatsapp-btn:hover{
-background:#1ebe5d;
-transform:scale(1.08);
-}>
+</style>
 
 </head>
 
@@ -263,8 +248,14 @@ transform:scale(1.08);
 
 <p>Your Online Book Store for Cricket Lovers</p>
 
-<a href="<a href="https://wa.me/919350213350" target="_blank"> <button class="whatsapp-btn"> 💬 Chat on WhatsApp </button> </a>">
-<button class="btn">Chat on WhatsApp</button>
+<p style="color:#16a34a;font-weight:bold;font-size:20px;">
+🕐 24/7 Customer Support Available
+</p>
+
+<a href="https://wa.me/919350213350" target="_blank">
+<button class="whatsapp-btn">
+💬 Chat on WhatsApp
+</button>
 </a>
 
 </div>
@@ -336,24 +327,6 @@ transform:scale(1.08);
 </section>
 
 
-<section>
-
-<h2>Cricket Knowledge Corner</h2>
-
-<div class="fact">
-
-<p>🏏 Did you know?</p>
-
-<p>
-The longest cricket match ever played lasted 12 days between England and South Africa in 1939.
-Cricket is a game of strategy, patience and deep analysis.
-</p>
-
-</div>
-
-</section>
-
-
 <footer>
 
 <p>© 2026 Sky Book Store</p>
@@ -362,6 +335,10 @@ Cricket is a game of strategy, patience and deep analysis.
 
 </footer>
 
-</body>
 
+<a href="https://wa.me/919350213350" class="float-whatsapp" target="_blank">
+💬
+</a>
+
+</body>
 </html>
