@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
@@ -12,7 +13,7 @@
 body{
 margin:0;
 font-family:Arial, sans-serif;
-background:linear-gradient(120deg,#eef2ff,#fdf2f8);
+background:#f5f7ff;
 color:#222;
 overflow-x:hidden;
 }
@@ -20,15 +21,15 @@ overflow-x:hidden;
 /* TOP BAR */
 
 .topbar{
-background:linear-gradient(90deg,#2563eb,#9333ea);
+background:linear-gradient(90deg,#2563eb,#7c3aed);
 color:white;
 text-align:center;
 padding:12px;
-font-size:15px;
 font-weight:bold;
+font-size:15px;
 }
 
-/* HERO SECTION */
+/* HERO */
 
 .hero{
 height:90vh;
@@ -57,7 +58,6 @@ background:rgba(255,255,255,0.85);
 
 .hero h1{
 font-size:75px;
-font-weight:bold;
 color:#2563eb;
 z-index:2;
 text-shadow:0 3px 12px rgba(0,0,0,0.2);
@@ -72,23 +72,36 @@ z-index:2;
 /* WHATSAPP BUTTON */
 
 .whatsapp-btn{
+
 background:#25D366;
 color:white;
-padding:18px 40px;
-border:none;
-border-radius:10px;
-font-size:20px;
+
+font-size:22px;
 font-weight:bold;
-cursor:pointer;
-margin-top:25px;
-z-index:2;
-box-shadow:0 8px 20px rgba(0,0,0,0.2);
+
+padding:18px 45px;
+
+border-radius:12px;
+
+text-decoration:none;
+
+margin-top:30px;
+
+border:3px solid white;
+
+box-shadow:0 10px 30px rgba(0,0,0,0.25);
+
+z-index:3;
+
 transition:0.3s;
+
 }
 
 .whatsapp-btn:hover{
+
 background:#1ebe5d;
-transform:scale(1.08);
+transform:scale(1.1);
+
 }
 
 /* BOOKS */
@@ -107,12 +120,19 @@ margin-top:40px;
 }
 
 .book{
+
 background:white;
+
 width:240px;
+
 padding:20px;
+
 border-radius:12px;
+
 box-shadow:0 6px 20px rgba(0,0,0,0.1);
+
 transition:0.3s;
+
 }
 
 .book:hover{
@@ -153,80 +173,30 @@ padding:35px;
 text-align:center;
 }
 
-/* ANIMATED BALL */
-
-.ball{
-position:fixed;
-top:80%;
-left:-40px;
-font-size:42px;
-animation:ballmove 10s linear infinite;
-}
-
-@keyframes ballmove{
-
-0%{
-left:-40px;
-transform:rotate(0deg);
-}
-
-50%{
-top:30%;
-}
-
-100%{
-left:110%;
-transform:rotate(720deg);
-}
-
-}
-
-/* FLOODLIGHTS */
-
-.floodlights{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
-pointer-events:none;
-
-background:linear-gradient(
-120deg,
-rgba(255,255,255,0) 40%,
-rgba(255,255,255,0.25) 50%,
-rgba(255,255,255,0) 60%
-);
-
-background-size:200% 200%;
-animation:lightsMove 6s linear infinite;
-}
-
-@keyframes lightsMove{
-
-0%{
-background-position:-200% 0;
-}
-
-100%{
-background-position:200% 0;
-}
-
-}
-
 /* FLOATING WHATSAPP */
 
 .float-whatsapp{
+
 position:fixed;
+
 bottom:25px;
+
 right:25px;
+
 background:#25D366;
+
 color:white;
+
 font-size:28px;
+
 padding:15px 18px;
+
 border-radius:50%;
+
 box-shadow:0 6px 20px rgba(0,0,0,0.3);
+
 text-decoration:none;
+
 }
 
 </style>
@@ -236,11 +206,10 @@ text-decoration:none;
 <body>
 
 <div class="topbar">
-⭐ Best Services | ⚡ Easy to Use | 🕐 24×7 Customer Support
-</div>
 
-<div class="ball">🏏</div>
-<div class="floodlights"></div>
+⭐ Best Services | ⚡ Easy to Use | 🕐 24×7 Customer Support
+
+</div>
 
 <div class="hero">
 
@@ -248,14 +217,10 @@ text-decoration:none;
 
 <p>Your Online Book Store for Cricket Lovers</p>
 
-<p style="color:#16a34a;font-weight:bold;font-size:20px;">
-🕐 24/7 Customer Support Available
-</p>
+<a href="https://wa.me/919350213350" target="_blank" class="whatsapp-btn">
 
-<a href="https://wa.me/919350213350" target="_blank">
-<button class="whatsapp-btn">
 💬 Chat on WhatsApp
-</button>
+
 </a>
 
 </div>
@@ -336,9 +301,12 @@ text-decoration:none;
 </footer>
 
 
-<a href="https://wa.me/919350213350" class="float-whatsapp" target="_blank">
+<a href="https://wa.me/919350213350" target="_blank" class="float-whatsapp">
+
 💬
+
 </a>
 
 </body>
+
 </html>
