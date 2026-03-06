@@ -3,43 +3,45 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SkyBook Store - Online Book Store</title>
+<title>Sky Book Store</title>
 
 <style>
+
 body{
 margin:0;
 font-family:Arial, sans-serif;
-background:#111827;
+background:#0f172a;
 color:white;
 }
 
 header{
 text-align:center;
-padding:80px 20px;
-background:#1f2937;
+padding:90px 20px;
+background:linear-gradient(135deg,#1e293b,#020617);
 }
 
 header h1{
-font-size:50px;
+font-size:52px;
 margin-bottom:10px;
 }
 
 header p{
 font-size:20px;
+color:#cbd5f5;
 }
 
 .btn{
 background:#22c55e;
 border:none;
-padding:15px 30px;
+padding:15px 35px;
 font-size:18px;
-border-radius:5px;
+border-radius:6px;
 cursor:pointer;
-margin-top:20px;
+margin-top:25px;
 }
 
 section{
-padding:60px 20px;
+padding:70px 20px;
 text-align:center;
 }
 
@@ -47,21 +49,37 @@ text-align:center;
 display:flex;
 flex-wrap:wrap;
 justify-content:center;
-gap:20px;
+gap:25px;
+margin-top:40px;
 }
 
 .book{
-background:#1f2937;
+background:#1e293b;
 padding:25px;
-width:220px;
+width:230px;
 border-radius:10px;
+box-shadow:0px 0px 10px rgba(0,0,0,0.3);
 }
 
-footer{
-background:#030712;
-padding:20px;
+.book h3{
+margin-top:10px;
+}
+
+.cricket{
+background:#1f2937;
+}
+
+.footer{
+background:#020617;
+padding:30px;
 text-align:center;
 }
+
+.small{
+color:#9ca3af;
+font-size:14px;
+}
+
 </style>
 
 </head>
@@ -69,51 +87,88 @@ text-align:center;
 <body>
 
 <header>
-<h1>Sky Book Store</h1>
-<p>Your Dream Online Book Store</p>
 
-<a href="https://wa.me/919999999999">
+<h1>Sky Book Store</h1>
+
+<p>Your Dream Online Book Store for Cricket Lovers</p>
+
+<p class="small">Explore books on cricket strategy, player insights and match understanding.</p>
+
+<a href="https://wa.me/+919350213350">
 <button class="btn">Order Books on WhatsApp</button>
 </a>
 
 </header>
 
+
 <section>
 
-<h2>Popular Books</h2>
+<h2>Popular Cricket Books</h2>
+
+<p class="small">Handpicked books for fans who want to understand cricket deeper.</p>
 
 <div class="books">
 
 <div class="book">
 <h3>Cricket Analytics</h3>
-<p>Learn deep cricket match analysis and statistics.</p>
+<p>Understand player statistics, strike rates, and match patterns.</p>
 </div>
 
 <div class="book">
 <h3>Fantasy Cricket Guide</h3>
-<p>Build winning fantasy teams with expert insights.</p>
+<p>Learn how to build strong fantasy teams and analyze player form.</p>
 </div>
 
 <div class="book">
 <h3>Cricket Strategy</h3>
-<p>Understand pitch conditions, player form and match tactics.</p>
+<p>Explore field placements, bowling tactics and captaincy decisions.</p>
+</div>
+
+<div class="book">
+<h3>Great Cricket Moments</h3>
+<p>Stories from legendary matches and iconic cricket players.</p>
 </div>
 
 </div>
 
 </section>
+
+
+<section class="cricket">
+
+<h2>Why Cricket Readers Love Sky Book Store</h2>
+
+<p>Cricket is not just a sport — it is strategy, statistics and passion.</p>
+
+<p class="small">
+From powerplay strategies to understanding batting partnerships,
+our bookstore brings knowledge closer to every cricket fan.
+</p>
+
+</section>
+
 
 <section>
 
-<h2>Why Choose SkyBook</h2>
+<h2>Our Mission</h2>
 
-<p>SkyBook is a platform for cricket lovers who want to learn match analysis, cricket strategies and fantasy insights through books.</p>
+<p class="small">
+Sky Book Store is dedicated to cricket lovers who want to learn more about
+the game beyond the stadium — through books, insights and knowledge.
+</p>
 
 </section>
 
-<footer>
-<p>© 2026 SkyBook Book Store</p>
-</footer>
+
+<div class="footer">
+
+<p>© 2026 Sky Book Store</p>
+
+<p class="small">
+For cricket fans • For readers • For the love of the game
+</p>
+
+</div>
 
 </body>
 </html>
